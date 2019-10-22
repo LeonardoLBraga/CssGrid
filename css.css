@@ -1,0 +1,34 @@
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        width: 100%;
+    }
+
+    div[target]{
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    div[target= header]{
+        grid-column: 1 / 4;
+        grid-row: 1;
+        background-color: green;
+    }
+    div[target= main]{
+        grid-column: 1 / 3;
+        grid-row: 2 / 5;
+        background-color:rgb(132, 120, 120);  
+    }
+    div[target= side]{
+        grid-column: 3;
+        grid-row: 2 / 5;
+        background-color: goldenrod;
+
+    }
+    div[target= footer]{
+        grid-column: 1 / 4;
+        grid-row: 5 / 5;
+        background-color: rgb(240, 59, 59);
+    }
